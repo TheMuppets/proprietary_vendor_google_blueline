@@ -1225,11 +1225,18 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/lib64/libmotion_ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmotion_ae.so \
     vendor/google/blueline/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/google/blueline/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
+    vendor/google/blueline/proprietary/vendor/lib64/libnos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnos.so \
     vendor/google/blueline/proprietary/vendor/lib64/libnos_citadeld_proxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnos_citadeld_proxy.so \
+    vendor/google/blueline/proprietary/vendor/lib64/libnos_client_citadel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnos_client_citadel.so \
+    vendor/google/blueline/proprietary/vendor/lib64/libnos_datagram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnos_datagram.so \
+    vendor/google/blueline/proprietary/vendor/lib64/libnos_datagram_citadel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnos_datagram_citadel.so \
+    vendor/google/blueline/proprietary/vendor/lib64/libnos_transport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnos_transport.so \
+    vendor/google/blueline/proprietary/vendor/lib64/libnosprotos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnosprotos.so \
     vendor/google/blueline/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/google/blueline/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/google/blueline/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/google/blueline/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/google/blueline/proprietary/vendor/lib64/libpixelstats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpixelstats.so \
     vendor/google/blueline/proprietary/vendor/lib64/libpower_anomaly_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_anomaly_data.so \
     vendor/google/blueline/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/google/blueline/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
@@ -1304,6 +1311,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/google/blueline/proprietary/vendor/lib64/libwvhidl@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl@1.3.so \
     vendor/google/blueline/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
+    vendor/google/blueline/proprietary/vendor/lib64/nos_app_avb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nos_app_avb.so \
+    vendor/google/blueline/proprietary/vendor/lib64/nos_app_identity.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nos_app_identity.so \
+    vendor/google/blueline/proprietary/vendor/lib64/nos_app_keymaster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nos_app_keymaster.so \
+    vendor/google/blueline/proprietary/vendor/lib64/nos_app_weaver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nos_app_weaver.so \
+    vendor/google/blueline/proprietary/vendor/lib64/pixelatoms-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/pixelatoms-cpp.so \
     vendor/google/blueline/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/google/blueline/proprietary/vendor/lib64/rfsa/adsp/libdsp_streamer_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libdsp_streamer_add_constant.so \
     vendor/google/blueline/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
