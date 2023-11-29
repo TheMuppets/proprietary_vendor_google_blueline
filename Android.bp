@@ -6,88 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
-	owner: "google",
-	apk: "proprietary/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "atfwd",
-	owner: "google",
-	apk: "proprietary/app/atfwd/atfwd.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "ims",
-	owner: "google",
-	apk: "proprietary/app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uceShimService",
-	owner: "google",
-	apk: "proprietary/app/uceShimService/uceShimService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uimremoteclient",
-	owner: "google",
-	apk: "proprietary/app/uimremoteclient/uimremoteclient.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "uimremoteserver",
-	owner: "google",
-	apk: "proprietary/app/uimremoteserver/uimremoteserver.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "CNEService",
-	owner: "google",
-	apk: "proprietary/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "qcrilmsgtunnel",
-	owner: "google",
-	apk: "proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "MobileFeliCaClient",
 	owner: "google",
 	apk: "proprietary/product/app/MobileFeliCaClient/MobileFeliCaClient.apk",
@@ -165,9 +83,20 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.services.secureui",
+	name: "uimremoteclient",
 	owner: "google",
-	apk: "proprietary/product/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
+	apk: "proprietary/product/app/uimremoteclient/uimremoteclient.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "uimremoteserver",
+	owner: "google",
+	apk: "proprietary/product/app/uimremoteserver/uimremoteserver.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -428,6 +357,85 @@ android_app_import {
 }
 
 android_app_import {
+	name: "com.qualcomm.qti.services.secureui",
+	owner: "google",
+	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QtiTelephonyService",
+	owner: "google",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "atfwd",
+	owner: "google",
+	apk: "proprietary/system_ext/app/atfwd/atfwd.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "ims",
+	owner: "google",
+	apk: "proprietary/system_ext/app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "uceShimService",
+	owner: "google",
+	apk: "proprietary/system_ext/app/uceShimService/uceShimService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "CNEService",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/CNEService/CNEService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "CarrierSetup",
 	owner: "google",
 	apk: "proprietary/system_ext/priv-app/CarrierSetup/CarrierSetup.apk",
@@ -524,28 +532,31 @@ android_app_import {
 }
 
 dex_import {
-	name: "qcrilhook",
+	name: "libhwinfo",
 	owner: "google",
-	jars: ["proprietary/framework/qcrilhook.jar"],
+	jars: ["proprietary/product/framework/libhwinfo.jar"],
+	product_specific: true,
 }
 
 dex_import {
 	name: "uimremoteclientlibrary",
 	owner: "google",
-	jars: ["proprietary/framework/uimremoteclientlibrary.jar"],
+	jars: ["proprietary/product/framework/uimremoteclientlibrary.jar"],
+	product_specific: true,
 }
 
 dex_import {
 	name: "uimremoteserverlibrary",
 	owner: "google",
-	jars: ["proprietary/framework/uimremoteserverlibrary.jar"],
+	jars: ["proprietary/product/framework/uimremoteserverlibrary.jar"],
+	product_specific: true,
 }
 
 dex_import {
-	name: "libhwinfo",
+	name: "qcrilhook",
 	owner: "google",
-	jars: ["proprietary/product/framework/libhwinfo.jar"],
-	product_specific: true,
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
 }
 
 dex_import {

@@ -6,24 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/blueline
 
 PRODUCT_COPY_FILES += \
-    vendor/google/blueline/proprietary/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml \
-    vendor/google/blueline/proprietary/etc/permissions/com.quicinc.cne.CNEService.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.CNEService.xml \
-    vendor/google/blueline/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
-    vendor/google/blueline/proprietary/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteclient.xml \
-    vendor/google/blueline/proprietary/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/uimremoteserver.xml \
-    vendor/google/blueline/proprietary/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvideocodec.so \
-    vendor/google/blueline/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so \
-    vendor/google/blueline/proprietary/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtextutils.so \
-    vendor/google/blueline/proprietary/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtutils.so \
-    vendor/google/blueline/proprietary/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimscamera_jni.so \
-    vendor/google/blueline/proprietary/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimsmedia_jni.so \
-    vendor/google/blueline/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so \
-    vendor/google/blueline/proprietary/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecureui_svcsock_system.so \
     vendor/google/blueline/proprietary/product/etc/ambient/matcher_tah.leveldb:$(TARGET_COPY_OUT_PRODUCT)/etc/ambient/matcher_tah.leveldb \
-    vendor/google/blueline/proprietary/product/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/cne/Nexus/ATT/ATT_profiles.xml \
-    vendor/google/blueline/proprietary/product/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/cne/Nexus/ROW/ROW_profiles.xml \
-    vendor/google/blueline/proprietary/product/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/cne/Nexus/VZW/VZW_profiles.xml \
-    vendor/google/blueline/proprietary/product/etc/cne/andsfCne.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/cne/andsfCne.xml \
+    vendor/google/blueline/proprietary/system_ext/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cne/Nexus/ATT/ATT_profiles.xml \
+    vendor/google/blueline/proprietary/system_ext/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cne/Nexus/ROW/ROW_profiles.xml \
+    vendor/google/blueline/proprietary/system_ext/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cne/Nexus/VZW/VZW_profiles.xml \
+    vendor/google/blueline/proprietary/system_ext/etc/cne/andsfCne.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cne/andsfCne.xml \
     vendor/google/blueline/proprietary/product/etc/felica/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
     vendor/google/blueline/proprietary/product/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
     vendor/google/blueline/proprietary/product/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg \
@@ -49,7 +36,19 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/product/etc/sysconfig/pixel_experience_2018.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2018.xml \
     vendor/google/blueline/proprietary/product/lib/libdmengine.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmengine.so \
     vendor/google/blueline/proprietary/product/lib/libdmjavaplugin.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdmjavaplugin.so \
-    vendor/google/blueline/proprietary/product/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureuisvc_jni.so \
+    vendor/google/blueline/proprietary/system_ext/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qcrilmsgtunnel.xml \
+    vendor/google/blueline/proprietary/system_ext/etc/permissions/com.quicinc.cne.CNEService.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.quicinc.cne.CNEService.xml \
+    vendor/google/blueline/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
+    vendor/google/blueline/proprietary/product/etc/permissions/uimremoteclient.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/uimremoteclient.xml \
+    vendor/google/blueline/proprietary/product/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/uimremoteserver.xml \
+    vendor/google/blueline/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/librcc.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsecureui_svcsock_system.so \
     vendor/google/blueline/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/google/blueline/proprietary/system_ext/etc/permissions/com.android.omadm.radioconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.omadm.radioconfig.xml \
     vendor/google/blueline/proprietary/system_ext/etc/permissions/com.google.android.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.camera.extensions.xml \
@@ -60,19 +59,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/system_ext/etc/permissions/privapp-permissions-google-se-lineage.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se-lineage.xml \
     vendor/google/blueline/proprietary/system_ext/etc/permissions/vzw_mvs_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vzw_mvs_permissions.xml \
     vendor/google/blueline/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
+    vendor/google/blueline/proprietary/system_ext/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsecureuisvc_jni.so \
     vendor/google/blueline/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-full-v0.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-full-v0.img \
     vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-v1.img
 
 PRODUCT_PACKAGES += \
-    QtiTelephonyService \
-    atfwd \
-    ims \
-    uceShimService \
-    uimremoteclient \
-    uimremoteserver \
-    CNEService \
-    qcrilmsgtunnel \
     MobileFeliCaClient \
     MobileFeliCaMenuMainApp \
     MobileFeliCaSettingApp \
@@ -80,7 +72,8 @@ PRODUCT_PACKAGES += \
     MobileFeliCaWebPluginBoot \
     PixelCameraServicesBlueline \
     VZWAPNLib \
-    com.qualcomm.qti.services.secureui \
+    uimremoteclient \
+    uimremoteserver \
     AmbientSensePrebuilt \
     AppDirectedSMSService \
     CarrierServices \
@@ -102,6 +95,13 @@ PRODUCT_PACKAGES += \
     TetheringEntitlement \
     USCCDM \
     WfcActivation \
+    com.qualcomm.qti.services.secureui \
+    QtiTelephonyService \
+    atfwd \
+    ims \
+    uceShimService \
+    CNEService \
+    qcrilmsgtunnel \
     CarrierSetup \
     EuiccSupportPixel \
     EuiccSupportPixelPermissions \
@@ -110,10 +110,10 @@ PRODUCT_PACKAGES += \
     RilConfigService \
     grilservice \
     obdm_stub \
-    qcrilhook \
+    libhwinfo \
     uimremoteclientlibrary \
     uimremoteserverlibrary \
-    libhwinfo \
+    qcrilhook \
     RadioConfigLib \
     com.android.hotwordenrollment.common.util \
     com.google.android.camera.extensions \
