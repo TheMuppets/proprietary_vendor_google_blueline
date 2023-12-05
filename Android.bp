@@ -26,16 +26,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "datastatusnotification",
-	owner: "google",
-	apk: "proprietary/app/datastatusnotification/datastatusnotification.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "ims",
 	owner: "google",
 	apk: "proprietary/app/ims/ims.apk",
