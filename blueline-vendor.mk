@@ -96,13 +96,12 @@ PRODUCT_PACKAGES += \
     TetheringEntitlement \
     USCCDM \
     WfcActivation \
-    com.qualcomm.qti.services.secureui \
     QtiTelephonyService \
     atfwd \
+    com.qualcomm.qti.services.secureui \
     ims \
     uceShimService \
     CNEService \
-    qcrilmsgtunnel \
     CarrierSetup \
     EuiccSupportPixel \
     EuiccSupportPixelPermissions \
@@ -111,14 +110,15 @@ PRODUCT_PACKAGES += \
     RilConfigService \
     grilservice \
     obdm_stub \
+    qcrilmsgtunnel \
     libhwinfo \
     uimremoteclientlibrary \
     uimremoteserverlibrary \
-    qcrilhook \
     RadioConfigLib \
     com.android.hotwordenrollment.common.util \
     com.google.android.camera.extensions \
-    google-ril
+    google-ril \
+    qcrilhook
 PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/product/etc/CarrierSettings/a1_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/a1_at.pb \
     vendor/google/blueline/proprietary/product/etc/CarrierSettings/ahamo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ahamo_jp.pb \
