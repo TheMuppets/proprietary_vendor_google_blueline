@@ -63,7 +63,11 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/blueline/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@1.0.so \
     vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-full-v0.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-full-v0.img \
-    vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-v1.img
+    vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-v1.img \
+    vendor/google/blueline/proprietary/vendor/bin/hw/vendor.google.wifi_ext-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.wifi_ext-service-vendor \
+    vendor/google/blueline/proprietary/vendor/etc/init/vendor.google.wifi_ext-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wifi_ext-service.rc \
+    vendor/google/blueline/proprietary/vendor/lib64/google_wifi_firmware_config_info_cc_proto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/google_wifi_firmware_config_info_cc_proto.so \
+    vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wifi_ext-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wifi_ext-V3-ndk.so
 
 PRODUCT_PACKAGES += \
     MobileFeliCaClient \
@@ -118,7 +122,8 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     com.google.android.camera.extensions \
     google-ril \
-    qcrilhook
+    qcrilhook \
+    manifest_wifi_ext_aidl
 PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/product/etc/CarrierSettings/a1_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/a1_at.pb \
     vendor/google/blueline/proprietary/product/etc/CarrierSettings/ahamo_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ahamo_jp.pb \
@@ -277,7 +282,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/bin/hw/init_citadel:$(TARGET_COPY_OUT_VENDOR)/bin/hw/init_citadel \
     vendor/google/blueline/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/google/blueline/proprietary/vendor/bin/hw/vendor.google.radioext@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.radioext@1.0-service \
-    vendor/google/blueline/proprietary/vendor/bin/hw/vendor.google.wifi_ext@1.0-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.wifi_ext@1.0-service-vendor \
     vendor/google/blueline/proprietary/vendor/bin/hw/vendor.google.wireless_charger@1.3-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.wireless_charger@1.3-service-vendor \
     vendor/google/blueline/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/google/blueline/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
@@ -423,7 +427,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/google/blueline/proprietary/vendor/etc/init/rebootescrow-citadel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rebootescrow-citadel.rc \
     vendor/google/blueline/proprietary/vendor/etc/init/vendor.google.radioext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.radioext@1.0-service.rc \
-    vendor/google/blueline/proprietary/vendor/etc/init/vendor.google.wifi_ext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wifi_ext@1.0-service.rc \
     vendor/google/blueline/proprietary/vendor/etc/init/vendor.google.wireless_charger@1.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wireless_charger@1.3-service.rc \
     vendor/google/blueline/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/google/blueline/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
@@ -998,7 +1001,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/lib64/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libQTapGLES.so \
     vendor/google/blueline/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/google/blueline/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
-    vendor/google/blueline/proprietary/vendor/lib64/google_wifi_firmware_config_info_cc_proto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/google_wifi_firmware_config_info_cc_proto.so \
     vendor/google/blueline/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/google/blueline/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/google/blueline/proprietary/vendor/lib64/hw/camera.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.sdm845.so \
@@ -1224,8 +1226,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/vendor/lib64/vendor.google.radioext@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.2.so \
     vendor/google/blueline/proprietary/vendor/lib64/vendor.google.radioext@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.radioext@1.3.so \
     vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wifi_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wifi_ext@1.0.so \
-    vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wifi_ext@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wifi_ext@1.1.so \
-    vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wifi_ext@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wifi_ext@1.2.so \
     vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wireless_charger@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wireless_charger@1.0.so \
     vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wireless_charger@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wireless_charger@1.1.so \
     vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wireless_charger@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wireless_charger@1.2.so \
@@ -1476,6 +1476,5 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service.citadel \
     android.hardware.weaver@1.0-service.citadel \
     manifest_android.hardware.drm@1.3-service.widevine \
-    manifest_wifi_ext \
     rebootescrow-citadel \
     vendor.google.wireless_charger@1.3-service-vendor
