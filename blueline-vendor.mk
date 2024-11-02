@@ -43,11 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/blueline/proprietary/system_ext/lib64/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsecureuisvc_jni.so \
     vendor/google/blueline/proprietary/system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-full-v0.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-full-v0.img \
-    vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-v1.img \
-    vendor/google/blueline/proprietary/vendor/bin/hw/vendor.google.wifi_ext-service-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.google.wifi_ext-service-vendor \
-    vendor/google/blueline/proprietary/vendor/etc/init/vendor.google.wifi_ext-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.google.wifi_ext-service.rc \
-    vendor/google/blueline/proprietary/vendor/lib64/google_wifi_firmware_config_info_cc_proto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/google_wifi_firmware_config_info_cc_proto.so \
-    vendor/google/blueline/proprietary/vendor/lib64/vendor.google.wifi_ext-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.google.wifi_ext-V3-ndk.so
+    vendor/google/blueline/proprietary/system_ext/priv-app/EuiccSupportPixel/esim-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel/esim-v1.img
 
 PRODUCT_PACKAGES += \
     MobileFeliCaClient \
@@ -87,8 +83,7 @@ PRODUCT_PACKAGES += \
     obdm_stub \
     libhwinfo \
     com.android.hotwordenrollment.common.util \
-    com.google.android.camera.extensions \
-    manifest_wifi_ext_aidl.xml
+    com.google.android.camera.extensions
 
 PRODUCT_PACKAGES += \
     libdmengine_libdmengine_symlink32 \

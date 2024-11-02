@@ -465,15 +465,6 @@ dex_import {
 	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "manifest_wifi_ext_aidl.xml",
-	owner: "google",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_wifi_ext_aidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
 install_symlink {
 	name: "libdmengine_libdmengine_symlink32",
 	product_specific: true,
